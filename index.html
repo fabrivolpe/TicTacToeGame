@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="choose-players">
+        <div class="button-container">
+            <h1>Select Mode</h1>
+            <button class="players-button" id="single">1 Player</button>
+            <button class="players-button" id="multiplayer">2 Players</button>
+        </div>
+    </div>
+    <div class="difficulty">
+        <div class="button-container">
+            <h1>Select Difficulty</h1>
+            <button class="difficulty-button" id="easy" onclick="pickDifficulty()">Easy</button>
+            <button class="difficulty-button" id="impossible" onclick="pickDifficulty()">Impossible</button>
+        </div>
+    </div>
+    <div class="game">
+        <div class="multiplayer-turn">
+            <h2>Turn:</h2>
+            <h3>Player 1 (O)</h3>
+        </div>
+        <h1></h1>
+        <table>
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="endgame">
+        <div class="text"></div>
+        <button onclick="startGame()">Replay</button>
+    </div>
+    <div class="multiplayer-endgame">
+        <div class="text"></div>
+        <button onclick="startMultiplayerGame()">Replay</button>
+    </div>
+    <div class="main-menu">
+        <button onclick="mainMenu();">Main Menu</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
